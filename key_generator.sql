@@ -1,0 +1,60 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : 127.0.0.1:3306
+-- Généré le :  jeu. 17 oct. 2019 à 02:23
+-- Version du serveur :  5.7.26
+-- Version de PHP :  7.2.18
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données :  `key_generator`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `licencekey`
+--
+
+DROP TABLE IF EXISTS `licencekey`;
+CREATE TABLE IF NOT EXISTS `licencekey` (
+  `KeyId` int(255) NOT NULL AUTO_INCREMENT,
+  `KeyName` varchar(255) NOT NULL,
+  `KeyText` text NOT NULL,
+  `KeyDate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`KeyId`)
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `licencekey`
+--
+
+INSERT INTO `licencekey` (`KeyId`, `KeyName`, `KeyText`, `KeyDate`) VALUES
+(1, 'Key1', 'G5M4W-8NHFK-1GLMF-TPBS1-1BXH6', '2019-10-16 20:19:13'),
+(14, 'Key14', 'DC5IE-DLWP2-W0TBM-4R5K8-LU1P2', '2019-10-16 22:02:45'),
+(4, 'Key4', '4ICZ9-UWLSY-BNELG-N0UJ2-L07B2', '2019-10-16 20:20:00'),
+(5, 'Key5', '1SF0Y-JV26Z-H8UD6-4SUIV-UA5P2', '2019-10-16 20:20:00'),
+(6, 'Key6', 'LM3WJ-3P4Z0-CJ54B-2USZB-9PACT', '2019-10-16 20:20:01'),
+(7, 'Key7', 'C8ES3-A6LST-LS5YO-50KPO-5J4GM', '2019-10-16 20:20:02'),
+(8, 'Key8', '0RJL5-TFA5J-748ER-R7GK2-EKL7D', '2019-10-16 20:20:03'),
+(9, 'Key9', 'ZD9T8-GY6KF-6C9UK-ADJR3-TEC18', '2019-10-16 20:20:04'),
+(10, 'Key10', 'K1AIB-0T7ES-S0MNW-FGSJK-UHZWV', '2019-10-16 20:20:05'),
+(11, 'Key11', 'OA24G-0DVIM-BGLS2-2SE7C-USXBN', '2019-10-16 21:11:19'),
+(13, 'Key13', '0UKTO-7VT3K-71MRS-8LP5T-V1C2B', '2019-10-16 21:11:27');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
